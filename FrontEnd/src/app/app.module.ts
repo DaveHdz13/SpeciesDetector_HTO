@@ -11,6 +11,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SharedModule } from './shared/shared.module';
 import { FooterComponent } from './shared/footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

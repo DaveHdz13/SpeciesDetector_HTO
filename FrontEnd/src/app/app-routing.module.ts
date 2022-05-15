@@ -6,7 +6,7 @@ import { NewsComponent } from './enciclopedia/pages/news/news.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'home',
     component: NewsComponent,
     pathMatch:'full'
   },
@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path:'**',
-    redirectTo: ''
+    redirectTo: 'home'
   }
 ];
 

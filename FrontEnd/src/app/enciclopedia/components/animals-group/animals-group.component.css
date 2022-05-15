@@ -1,12 +1,3 @@
-img{
-    width: 100%;
-    height: 100%;
-}
-.img{
-    width: 286px;
-    height: 166px;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -18,3 +9,14 @@ a{
     border-width: 1px;
 }
 
+img{
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}

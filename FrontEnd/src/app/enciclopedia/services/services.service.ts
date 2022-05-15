@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable, switchMap, tap } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { Animal } from '../interfaces/animal.interface';
 import { Noticia } from '../interfaces/noticia.interface';
 
 @Injectable({
@@ -8,20 +10,25 @@ import { Noticia } from '../interfaces/noticia.interface';
 })
 export class ServicesService {
 
-<<<<<<< HEAD
-  baseUrl:string = 'http://api.mediastack.com/v1/news?access_key=cda3c25af38aa29e0ee7678d85a8031e&categories=science&keywords=endangered marine'
-=======
-  baseUrl:string = ('http://api.mediastack.com/v1/news?access_key=6fc178ab9ab5f63240ce50f6ea67c9d1&categories=science&keywords=endangered marine&limit= 8')
->>>>>>> 6b1e730 (FooteryAbout)
+  private _newsUrl:string = ('http://api.mediastack.com/v1/news?access_key=6be5e3b16f6d75eabd13434b03b9e1ad&categories=science&keywords=endangered marine')
+  private _BaseUrl:string = environment.BaseUrl
 
   constructor(private http:HttpClient) { }
 
   getDatosNoticias(){
-    return this.http.get<Noticia>(this.baseUrl).pipe(
+    return this.http.get<Noticia>(this._newsUrl).pipe(
       map(resp=>{
         return resp.data
       })
     )
   }
+
+  getAnimales():Observable<Animal[]>{
+    return this.http.get<Animal[]>(this._BaseUrl)
+  }
  
+  getAnimalName(termino:string):Observable<Animal[]>{
+    return this.http.get<Animal[]>(`${this._BaseUrl}/name/${termino}`)
+  }
+
 }
