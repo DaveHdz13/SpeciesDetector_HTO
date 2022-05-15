@@ -3,6 +3,7 @@
     <app-overlay></app-overlay>
 </div>
 
+<<<<<<< HEAD
 <!-- Sección de noticias -->
 
 <div class="container bg mt-2">
@@ -20,3 +21,24 @@
 
 <!-- División de una sección con otra -->
 <div class="division"></div>
+=======
+<div class="bg-2">
+    <h1 class="text-center">Noticias</h1>
+    <div class="container bg">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 my-3" *ngFor="let noticia of noticias">
+                <div class="card" style="width: 18rem;">
+                    <div class="img">
+                        <img [src]="noticia.image" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title cantidad-text">{{noticia.title}}</h5>
+                      <p class="card-text cantidad-text">{{noticia.description}}</p>
+                      <a [href]="noticia.url" class="btn btn-primary">Ir a la noticia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+>>>>>>> 6b1e730 (FooteryAbout)
