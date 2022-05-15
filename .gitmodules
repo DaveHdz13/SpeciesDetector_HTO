@@ -1,0 +1,3 @@
+[submodule ".\\ocean-danger\\"]
+	path = .\\ocean-danger\\
+	url = https://github.com/AlejandroMorales-s/ocean-danger
