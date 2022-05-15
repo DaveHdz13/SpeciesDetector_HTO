@@ -22,11 +22,11 @@ We use **Angular** as our main framework for the purpose of making a one page si
 
 The page starts with a set of **news** about endangered species.
 
-
+![News](/img/MicrosoftTeams-image.png)
 
 Having the most important section with **selected endangered species** we added to a Data Base.
 
-
+![EndangeredSpecies](/img/MicrosoftTeams-image-3.png)
 
 Using **PostgreSQL** for the creation of a small database with information about endangered species.
 
