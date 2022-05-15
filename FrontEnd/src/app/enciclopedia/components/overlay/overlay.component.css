@@ -1,4 +1,5 @@
 section{
+    width: auto;
     position: relative;
 }
 video{
@@ -9,13 +10,25 @@ video{
     height: 100%;
     object-fit: cover;
 }
+/* Ajuste de tamaño dependiendo de la pantalla */
 h1{ 
     color: azure;
     background:rgba(0,0,0,0.7);
-    font-size: 220px;
+    font-size: 90px;
     text-align: center;
     font-weight: 400;
     mix-blend-mode: multiply;
     margin: 0;
     padding: 1px;
+}
+
+@media (min-width:768px){
+    h1{
+        font-size:150px;
+    }
+}
+@media (min-width:992px){
+    h1{
+        font-size: 220px;
+    }
 }

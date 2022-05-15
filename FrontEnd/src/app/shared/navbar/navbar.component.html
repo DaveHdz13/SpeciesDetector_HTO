@@ -1,12 +1,38 @@
-<div class="row justify-content-between py-2">
-    <div class="col-md-4 col-sm-12">
-        logo
+<nav class="navbar navbar-expand-lg navbar-dark bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""><img src="./../../../assets/Logo2.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="animals">Animals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="about">About us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-4">
-        <a class="btn btn-primary btn-sm me-3" routerLink="">inicio</a>
-        <a class="btn btn-primary btn-sm me-3" routerLink="animals">Animales</a>
-        <a class="btn btn-primary btn-sm" routerLink="about">Nosotros</a>
+</nav>
+
+
+
+<!-- <div class="row justify-content-between py-2">
+    <div class="col-md-4 col-12">
+        <a routerLink=""><img src="./../../../assets/Logo2.png" alt="logo"></a>
     </div>
-</div>
+    <div class="col-4 align-self-center">
+        <div class="row justify-content-end">
+            <div class="col-2"><a class="btn btn-primary btn-sm" routerLink="">Home</a></div>
+            <div class="col-2"><a class="btn btn-primary btn-sm" routerLink="animals">Animals</a></div>
+            <div class="col-2"><a class="btn btn-primary btn-sm" routerLink="about">About us</a></div>
+        </div>
+    </div>
+</div> -->
 
 
